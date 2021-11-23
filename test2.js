@@ -18,7 +18,10 @@ singelton = (function(){
   }
 })()
 
-
+/*  the objects returned from singelton takes the persistent lexical scope reference */
+/*  and those parameters are accesible from singleA and singleB */
 const singleA = singelton.getInstance()
 const singleB = singelton.getInstance()
 
+console.log(singleA.getRandomNumber()=== singleB.getRandomNumber())
+/* true */
