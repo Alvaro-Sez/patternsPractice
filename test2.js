@@ -4,9 +4,11 @@ singelton = (function(){
   const setInstance = function(){
     const privateRandomNumber = Math.random()
     return {
+/* here we could implement the class constructor method , and it could only be instantiated once */
       getRandomNumber: function(){
         return privateRandomNumber
       }
+/* --------------------------------- */
     }
   }
 
